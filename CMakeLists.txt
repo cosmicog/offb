@@ -6,6 +6,7 @@ project(offb)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
     roscpp
+    mavros_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -101,7 +102,6 @@ catkin_package(
     # INCLUDE_DIRS include
     LIBRARIES offb
     CATKIN_DEPENDS roscpp
-    DEPENDS system_lib
 )
 
 ###########
